@@ -239,6 +239,7 @@ INFO | Started SelectChannelConnector@0.0.0.0:8161
 
 NOTE:
 
+    *由于文中所演示的ActiveMQ旧版本和新版本目录结构有差距。
     例子的运行都是基于MAC OS的，如果是使用windows使用如下命令：
     C:\apache-activemq-5.4.1>bin\activemq.bat start
 
