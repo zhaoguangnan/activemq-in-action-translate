@@ -143,6 +143,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_20-b02-279-10M3065)
 Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01-279, mixed mode)
 ```
 
+你的输出可能有一些细微的差别，因为依赖你使用的操作系统。最重要的是输出了JAVA SE。这条命令告诉我们两个信息，我们正确安装了JAVA SE并且是JAVA 1.6。如果不是你将要修改一下重新安装。
+
+~~Ant安装介绍~~
 
 
 
