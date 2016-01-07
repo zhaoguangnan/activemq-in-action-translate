@@ -189,3 +189,56 @@ webapps
     * webapps-ActiveMQ web管理页面。
 
 下一步就是启动ActiveMQ并运行一些例子。
+
+####1.3.3 启动ActiveMQ
+
+解压缩完成后，ActiveMQ就可以使用了，启动ActiveMQ。
+
+```Bash
+$ ./bin/activemq console
+INFO: Using default configuration
+(you can configure options in one of these file: /etc/default/activemq
+/Users/bsnyder/.activemqrc)
+INFO: Invoke the following command to create a configuration file
+./bin/activemq setup [ /etc/default/activemq | /Users/bsnyder/.activemqrc ]
+INFO: Using java '/System/Library/Frameworks/JavaVM.framework/Home/bin/java'
+INFO: Starting in foreground, this is just for debugging purposes
+(stop process by pressing CTRL+C)
+Java Runtime: Apple Inc. 1.6.0_20
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+Heap sizes: current=258880k free=253105k max=258880k
+JVM args: -Xms256M -Xmx256M
+-Dorg.apache.activemq.UseDedicatedTaskRunner=true
+-Djava.util.logging.config.file=logging.properties
+-Dcom.sun.management.jmxremote
+-Dactivemq.classpath=/Users/bsnyder/amq/apache-activemq-5.4.1/conf;
+-Dactivemq.home=/Users/bsnyder/amq/apache-activemq-5.4.1
+-Dactivemq.base=/Users/bsnyder/amq/apache-activemq-5.4.1
+ACTIVEMQ_HOME: /Users/bsnyder/amq/apache-activemq-5.4.1
+ACTIVEMQ_BASE: /Users/bsnyder/amq/apache-activemq-5.4.1
+Loading message broker from: xbean:activemq.xml
+WARN | destroyApplicationContextOnStop parameter is deprecated,
+please use shutdown hooks instead
+INFO | PListStore:/Users/bsnyder/amq/apache-activemq-5.4.1/data/localhost/
+tmp_storage started INFO | Using Persistence Adapter:
+KahaDBPersistenceAdapter[/Users/bsnyder/amq/apache-activemq-5.4.1/data/
+kahadb]
+INFO | KahaDB is version 2
+INFO | Recovering from the journal ...
+INFO | Recovery replayed 1 operations from the journal in 0.029 seconds.
+INFO | ActiveMQ 5.4.1 JMS Message Broker (localhost) is starting
+...
+INFO | ActiveMQ Console at http://0.0.0.0:8161/admin
+INFO | Initializing Spring root WebApplicationContext
+INFO | Connector vm://localhost Started
+INFO | Camel Console at http://0.0.0.0:8161/camel
+INFO | ActiveMQ Web Demos at http://0.0.0.0:8161/demo
+INFO | RESTful file access application at http://0.0.0.0:8161/fileserver
+INFO | Started SelectChannelConnector@0.0.0.0:8161
+```
+
+NOTE:
+
+    例子的运行都是基于MAC OS的，如果是使用windows使用如下命令：
+    C:\apache-activemq-5.4.1>bin\activemq.bat start
+
