@@ -47,8 +47,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
-              <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
+            <state vertical-scroll-proportion="0.8125" vertical-offset="896" max-vertical-offset="1701">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -465,7 +465,7 @@
       <workItem from="1452084719400" duration="275000" />
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
-      <workItem from="1452132625332" duration="7882000" />
+      <workItem from="1452132625332" duration="7994000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -485,11 +485,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452140342447</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add 紧耦合图片">
+      <created>1452140544454</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1452140544454</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10720000" />
+    <option name="totallyTimeSpent" value="10832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -543,7 +549,8 @@
     <MESSAGE value="第一小节内容complete" />
     <MESSAGE value="为什么何时使用activemq" />
     <MESSAGE value="松耦合" />
-    <option name="LAST_COMMIT_MESSAGE" value="松耦合" />
+    <MESSAGE value="add 紧耦合图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 紧耦合图片" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -621,8 +628,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
-          <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
+        <state vertical-scroll-proportion="0.8125" vertical-offset="896" max-vertical-offset="1701">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
