@@ -147,6 +147,45 @@ Java HotSpot(TM) 64-Bit Server VM (build 16.3-b01-279, mixed mode)
 
 ~~Ant安装介绍~~
 
+####1.3.2 下载ActiveMQ
 
+ActiveMQ从这个: [http://activemq.apache.org/download.html](http://activemq.apache.org/download.html)下载
+点击5.4.1 release，有两个压缩包，一个是tar包linx，一个是zip windows，解压缩看一眼ActiveMQ目录。
 
+####1.3.3 检查ActiveMQ目录
 
+输入一下命令查看目录文件
+
+```Bash
+[apache-activemq-5.4.1]$ ls -1
+LICENSE
+NOTICE
+README.txt
+WebConsole-README.txt
+activemq-all-5.4.1.jar
+bin
+conf
+data
+docs
+example
+lib
+user-guide.html
+webapps
+```
+
+目录结构相当简单：
+
+    * LICENSE-ActiveMQ所有包使用的Apache开源消息协议。
+    * NOTICE-ActiveMQ版权信息。
+    * README-用户使用引导文件，包括一些文档及URL。
+    * WebConsole- README .txt-包括web管理的一些信息。
+    * bin-二进制执行文件及一些命令脚本。
+    * conf-包括所有的ActiveMQ的配置信息。
+    * data-log文件及消息持久化目录。
+    * docs-ActiveMQ Web文档。
+    * example-ActiveMQ Web文档。
+    * lib-ActiveMQ 需要的类库。
+    * user-guide.html-ActiveMQ引导页面。
+    * webapps-ActiveMQ web管理页面。
+
+下一步就是启动ActiveMQ并运行一些例子。

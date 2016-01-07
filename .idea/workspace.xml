@@ -34,8 +34,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70535713" vertical-offset="2429" max-vertical-offset="3318">
-              <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.9464286" vertical-offset="3059" max-vertical-offset="4116">
+              <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -473,7 +473,7 @@
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
       <workItem from="1452132625332" duration="15309000" />
-      <workItem from="1452150633446" duration="5935000" />
+      <workItem from="1452150633446" duration="7823000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -583,11 +583,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452156298551</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="delete line">
+      <created>1452156714106</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1452156714106</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24082000" />
+    <option name="totallyTimeSpent" value="25970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -649,7 +655,8 @@
     <MESSAGE value="修改翻译的目录名字" />
     <MESSAGE value="activeMQ where use complete" />
     <MESSAGE value="formate" />
-    <option name="LAST_COMMIT_MESSAGE" value="formate" />
+    <MESSAGE value="delete line" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -732,8 +739,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70535713" vertical-offset="2429" max-vertical-offset="3318">
-          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.9464286" vertical-offset="3059" max-vertical-offset="4116">
+          <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
           <folding />
         </state>
       </provider>
