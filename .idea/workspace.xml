@@ -34,8 +34,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9227941" vertical-offset="1578" max-vertical-offset="2583">
-              <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.5625" vertical-offset="1578" max-vertical-offset="2583">
+              <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -466,7 +466,7 @@
       <workItem from="1452084719400" duration="275000" />
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
-      <workItem from="1452132625332" duration="13428000" />
+      <workItem from="1452132625332" duration="13501000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -534,11 +534,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452145883036</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="下载安装activeMQ">
+      <created>1452148056936</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1452148056936</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16266000" />
+    <option name="totallyTimeSpent" value="16339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -595,7 +601,8 @@
     <MESSAGE value="add 紧耦合图片" />
     <MESSAGE value="何时使用ActiveMQ" />
     <MESSAGE value="图片显示问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片显示问题" />
+    <MESSAGE value="下载安装activeMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="下载安装activeMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -673,8 +680,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9227941" vertical-offset="1578" max-vertical-offset="2583">
-          <caret line="111" column="21" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.5625" vertical-offset="1578" max-vertical-offset="2583">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
           <folding />
         </state>
       </provider>
