@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="add 紧耦合图片">
+    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第一章.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第一章.md" />
     </list>
@@ -47,8 +47,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
-              <caret line="70" column="95" selection-start-line="70" selection-start-column="95" selection-end-line="70" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1743">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -465,7 +465,7 @@
       <workItem from="1452084719400" duration="275000" />
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
-      <workItem from="1452132625332" duration="8085000" />
+      <workItem from="1452132625332" duration="8181000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -497,11 +497,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452140646356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add 紧耦合图片">
+      <created>1452140737086</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1452140737086</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10923000" />
+    <option name="totallyTimeSpent" value="11019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -634,8 +640,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
-          <caret line="70" column="95" selection-start-line="70" selection-start-column="95" selection-end-line="70" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1743">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
