@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="为什么何时使用activemq">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/coupled.png" />
+    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第一章.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第一章.md" />
     </list>
@@ -48,8 +47,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6785714" vertical-offset="833" max-vertical-offset="1680">
-              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
+              <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -466,7 +465,7 @@
       <workItem from="1452084719400" duration="275000" />
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
-      <workItem from="1452132625332" duration="7681000" />
+      <workItem from="1452132625332" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -480,11 +479,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452137426512</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="松耦合">
+      <created>1452140342447</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1452140342447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10519000" />
+    <option name="totallyTimeSpent" value="10720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -537,7 +542,8 @@
     </option>
     <MESSAGE value="第一小节内容complete" />
     <MESSAGE value="为什么何时使用activemq" />
-    <option name="LAST_COMMIT_MESSAGE" value="为什么何时使用activemq" />
+    <MESSAGE value="松耦合" />
+    <option name="LAST_COMMIT_MESSAGE" value="松耦合" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -615,8 +621,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6785714" vertical-offset="833" max-vertical-offset="1680">
-          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.73214287" vertical-offset="896" max-vertical-offset="1701">
+          <caret line="70" column="117" selection-start-line="70" selection-start-column="117" selection-end-line="70" selection-end-column="117" />
           <folding />
         </state>
       </provider>
