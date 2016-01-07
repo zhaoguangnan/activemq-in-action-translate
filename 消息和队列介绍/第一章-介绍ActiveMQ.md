@@ -242,4 +242,34 @@ NOTE:
     *由于文中所演示的ActiveMQ旧版本和新版本目录结构有差距。
     例子的运行都是基于MAC OS的，如果是使用windows使用如下命令：
     C:\apache-activemq-5.4.1>bin\activemq.bat start
+    
+这个命令启动ActiveMQ broker和一些协议（TCP,SSL,STOMP,XMPP）。ActiveMQ启动了，客户端可以通过TCP的61616端口连接broker。
+这个配置将在第4章介绍。以上的输出告诉大家ActiveMQ已经启动起来了，准备就绪。现在他可以接受一些消息了。开始发送和接收消息最好的方式
+就是ActiveMQ带的一些例子。下一部分将一步步演示。
 
+###1.4 执行ActiveMQ的第一个例子
+
+前一部分演示了在终端中启动ActiveMQ，为了确定这一点你需要启动两个终端运行ActiveMQ例子。在第二个终端，进入example目录查看内容如下：
+
+```Bash
+[apache-activemq-5.4.1]$ cd ./example/
+bsnyder@mongoose [example]$ ls -1
+build.xml
+conf
+perfharness
+ruby
+src
+transactions
+```
+
+这个例子中包含一些项目，简单描述一下里面的内容（内容与先用）：
+
+    * build.xml-一个ant的配置文件。
+    * conf-使用java的配置文件目录。
+    * ruby-ruby使用STOMP协议连接使用ActiveMQ的一些例子。
+    * src-java例子代码所在的目录。
+    * transactions-通过ActiveMQ方式实现的交付的例子。
+    
+使用第二个终端
+    
+    
