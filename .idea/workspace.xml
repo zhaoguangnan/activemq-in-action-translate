@@ -34,8 +34,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.035714287" vertical-offset="2429" max-vertical-offset="3213">
-              <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.73214287" vertical-offset="1862" max-vertical-offset="3255">
+              <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -473,7 +473,7 @@
       <workItem from="1452124646009" duration="2510000" />
       <workItem from="1452132571226" duration="53000" />
       <workItem from="1452132625332" duration="15309000" />
-      <workItem from="1452150633446" duration="5319000" />
+      <workItem from="1452150633446" duration="5522000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -571,11 +571,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452152378379</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="activeMQ where use complete">
+      <created>1452156105644</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1452156105644</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23466000" />
+    <option name="totallyTimeSpent" value="23669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -636,7 +642,8 @@
     <MESSAGE value="formate" />
     <MESSAGE value="安装java" />
     <MESSAGE value="修改翻译的目录名字" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改翻译的目录名字" />
+    <MESSAGE value="activeMQ where use complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="activeMQ where use complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -719,8 +726,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035714287" vertical-offset="2429" max-vertical-offset="3213">
-          <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.73214287" vertical-offset="1862" max-vertical-offset="3255">
+          <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
           <folding />
         </state>
       </provider>
