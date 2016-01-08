@@ -239,7 +239,7 @@ INFO | Started SelectChannelConnector@0.0.0.0:8161
 
 NOTE:
 
-    *由于文中所演示的ActiveMQ旧版本和新版本目录结构有差距。
+    *文中所演示的ActiveMQ是旧版本和新版本目录结构有差距。
     例子的运行都是基于MAC OS的，如果是使用windows使用如下命令：
     C:\apache-activemq-5.4.1>bin\activemq.bat start
     
@@ -341,6 +341,17 @@ MDT 2010 ...' (length 1000)
 MDT 2010 ...' (length 1000)
 ```
 
+consumer的输出虽然被缩短了，但是还是看出了consumer收到了2,000个消息后关闭了。在这个时候productor和consumer都关闭了，但是broker依然在第1个终端
+运行着。可以看到ActiveMQ没有任何变化，因为默认的loging配置没有必要是不会有任何输出的。如果你想输出消息发送和接受的信息你可以改变日志配置。Loging相关
+将在第14章节介绍。
+你在这里学到了什么？通过ActiveMQ的例子，broker启动，运行，可以传递消息。这只是第一步。如果你成功运行了ActiveMQ的例子，说明你的机器网络没有问题，也知道
+ActiveMQ的配置运行正确了。如果你没有运行成功，你需要解决这个问题。如果你需要帮助，关注ActiveMQ邮件列表是最好的方式。这个例子只是帮助你开始使用AcitveMQ，
+但是不一定适应所有场景。这本书会有很多例子向你展示ActiveMQ的特性。会在第3章介绍这些特性。
+
+###1.5 总结
+
+ActiveMQ是通用的简单易用的消息中间。通过这个本书你将学到很多特性，很多场景可以使用ActiveMQ。这章介绍了很多ActiveMQ应用部署在全世界商业的场景。JMS规范被
+设计成使用在这些商业场景中。下一章节将简要介绍JMS，如果你流畅的阅读完了这两章节你可以跳过第3章的例子了。
 
 
     
