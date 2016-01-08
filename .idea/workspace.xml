@@ -473,7 +473,7 @@
       <workItem from="1452132571226" duration="53000" />
       <workItem from="1452132625332" duration="15309000" />
       <workItem from="1452150633446" duration="9541000" />
-      <workItem from="1452218677257" duration="4927000" />
+      <workItem from="1452218677257" duration="5019000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -619,11 +619,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452223461275</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="第二章节翻译开始了^-^">
+      <created>1452224299216</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1452224299216</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32615000" />
+    <option name="totallyTimeSpent" value="32707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -691,7 +697,8 @@
     <MESSAGE value="书中所使用的ActiveMQ旧版本与新版有区别" />
     <MESSAGE value="简单的生产者和消费者的例子" />
     <MESSAGE value="第一章节翻译结束了^-^" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一章节翻译结束了^-^" />
+    <MESSAGE value="第二章节翻译开始了^-^" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二章节翻译开始了^-^" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
