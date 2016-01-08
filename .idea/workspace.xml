@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" />
     </list>
     <ignored path="activemq-in-action-translate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,14 +27,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="第一章-介绍ActiveMQ.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="第一章-介绍ActiveMQ.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70535713" vertical-offset="6734" max-vertical-offset="7623">
-              <caret line="347" column="31" selection-start-line="347" selection-start-column="31" selection-end-line="347" selection-end-column="31" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7623">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.025331724" vertical-offset="0" max-vertical-offset="829">
+              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -51,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章.md" />
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" />
+        <option value="$PROJECT_DIR$/消息和队列介绍/理解面向消息中间件和JMS的架构.md" />
       </list>
     </option>
   </component>
@@ -460,7 +473,7 @@
       <workItem from="1452132571226" duration="53000" />
       <workItem from="1452132625332" duration="15309000" />
       <workItem from="1452150633446" duration="9541000" />
-      <workItem from="1452218677257" duration="4080000" />
+      <workItem from="1452218677257" duration="4927000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -600,11 +613,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452220634958</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="第一章节翻译结束了^-^">
+      <created>1452223461275</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1452223461275</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31768000" />
+    <option name="totallyTimeSpent" value="32615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -671,7 +690,8 @@
     <MESSAGE value="start activeMQ" />
     <MESSAGE value="书中所使用的ActiveMQ旧版本与新版有区别" />
     <MESSAGE value="简单的生产者和消费者的例子" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单的生产者和消费者的例子" />
+    <MESSAGE value="第一章节翻译结束了^-^" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一章节翻译结束了^-^" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -765,13 +785,24 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70535713" vertical-offset="6734" max-vertical-offset="7623">
-          <caret line="347" column="31" selection-start-line="347" selection-start-column="31" selection-end-line="347" selection-end-column="31" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7623">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025331724" vertical-offset="0" max-vertical-offset="829">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
