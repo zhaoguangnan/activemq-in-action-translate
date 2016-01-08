@@ -249,7 +249,7 @@ NOTE:
 
 ###1.4 执行ActiveMQ的第一个例子
 
-前一部分演示了在终端中启动ActiveMQ，为了确定这一点你需要启动两个终端运行ActiveMQ例子。在第二个终端，进入example目录查看内容如下：
+前一部分演示了在终端中启动ActiveMQ，为了确定这一点你需要启动两个终端运行ActiveMQ例子。在第2个终端，进入example目录查看内容如下：
 
 ```Bash
 [apache-activemq-5.4.1]$ cd ./example/
@@ -270,6 +270,78 @@ transactions
     * src-java例子代码所在的目录。
     * transactions-通过ActiveMQ方式实现的交付的例子。
     
-使用第二个终端
+使用第2个终端启动consumer。
+
+```Bash
+[example]$ ant consumer
+Buildfile: build.xml
+init:
+compile:
+consumer:
+[echo] Running consumer against server at $url =
+tcp://localhost:61616 for subject $subject = TEST.FOO
+[java] Connecting to URL: tcp://localhost:61616
+[java] Consuming queue: TEST.FOO
+[java] Using a non-durable subscription
+[java] Running 1 parallel threads
+[java] [Thread-2] We are about to wait until we consume:
+2000 message(s) then we will shutdown
+```
+
+以上命令编译JAVA consumer例子并且运行。输出如下：
+
+    * 使用tcp://localhost:61616连接到broker。
+    * 监听TEST.FOO队列。
+    * 使用非持久化订阅。
+    * 收到2000个消息后关闭。
+
+最重要的就是JMS consumer连接到broker并且等待消息。现在你可以发送一些消息到队列TEST.FOO。
+在第3个终端中，进入生产者例子的目录执行如下命令，生产者立刻发送一些消息。
+
+```Bash
+[example]$ ant producer
+Buildfile: build.xml
+init:
+compile:
+producer:
+[echo] Running producer against server at $url =
+tcp://localhost:61616 for subject $subject = TEST.FOO
+[java] Connecting to URL: tcp://localhost:61616
+[java] Publishing a Message with size 1000 to queue: TEST.FOO
+[java] Using non-persistent messages
+[java] Sleeping between publish 0 ms
+[java] Running 1 parallel threads
+[java] [Thread-2] Sending message: 'Message: 0 sent at: Thu Oct 14
+21:24:07 MDT 2010 ...'
+[java] [Thread-2] Sending message: 'Message: 1 sent at: Thu Oct 14
+21:24:07 MDT 2010 ...'
+[java] [Thread-2] Sending message: 'Message: 2 sent at: Thu Oct 14
+21:24:07 MDT 2010 ...'
+```
+
+虽然我们缩短了输出结果，但是从输出中可以看出如下内容：
+
+    * 使用tcp://localhost:61616连接到broker。
+    * 发送了一些消息到TEST.FOO队列。
+    * 使用非持久化消息。
+    * 由于使用个线程，所以不能阻塞消息发送。
+
+一旦JMS生产者发送了2,000个消息后就会关闭。这些消息就是消费者关闭前等待所有的消息了。只要生产者发送了消息，从消费者启动的终端上就可以看到消费者正在消费消息。
+以下就是在第二个终端中（consumer）的输出：
+
+```Bash
+[java] [Thread-2] Received: 'Message: 0 sent at: Thu Oct 14 21:23:56
+MDT 2010 ...' (length 1000)
+[java] [Thread-2] Received: 'Message: 1 sent at: Thu Oct 14 21:23:56
+MDT 2010 ...' (length 1000)
+[java] [Thread-2] Received: 'Message: 2 sent at: Thu Oct 14 21:23:56
+MDT 2010 ...' (length 1000)
+...
+[java] [Thread-2] Received: 'Message: 1999 sent at: Thu Oct 14 21:23:56
+MDT 2010 ...' (length 1000)
+```
+
+
+
     
     
