@@ -70,7 +70,7 @@ ActiveMQ提供了松耦合的系统架构。松耦合的架构是相对于紧耦
 如果是，那么这些系统就紧紧的耦合到一起了。但是如果一个应用改变不影响其他应用，那么应用之间就是松耦合的。紧耦合是的应用比松耦合的应用是非常难以维护的。另外弱耦合的应用非常容易
 处理不可预见的改变。
 
-![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/coupled.png)
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/rpc.png)
 
 远程过程调用的紧耦合的例子（图1.1）
 
@@ -79,9 +79,9 @@ ActiveMQ提供了松耦合的系统架构。松耦合的架构是相对于紧耦
 调用者在图1.1阻塞直到被调用者返回。许多系统使用RPC是成功的，但是那有许多的劣势，比如说紧耦合：高的维护成本，甚至一个小的改变都会波及到整个系统架构。恰当的调速在系统之间是必要的。
 两个应用在同一时刻都必须是可用的，当一个应用发出请求(1)，另一个应用处理并返回(2)。这个要求是笨重的，而且系统极易崩溃。
 
-![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/loosely-coupled-recive.png)
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/send-message.png)
 
-![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/loosely-coupled-send.png)
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/receive-message.png)
 
 松耦合的例子使用JMS通信（图1.2）
 
