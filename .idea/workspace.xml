@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/receive-message.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rpc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/send-message.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/coupled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/loosely-coupled-recive.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/loosely-coupled-send.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
     <ignored path="activemq-in-action-translate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,14 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="第一章-介绍ActiveMQ.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="第一章-介绍ActiveMQ.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.27027026">
+              <first_editor vertical-scroll-proportion="-3.6216216">
                 <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -70,15 +64,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.5540541">
-                <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+              <first_editor vertical-scroll-proportion="0.6351351">
+                <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -102,8 +96,8 @@
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" />
+        <option value="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
       </list>
     </option>
   </component>
@@ -642,7 +636,7 @@
       <workItem from="1452150633446" duration="8887000" />
       <workItem from="1452176558331" duration="2234000" />
       <workItem from="1452344593107" duration="7697000" />
-      <workItem from="1452523109778" duration="2271000" />
+      <workItem from="1452523109778" duration="3117000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -818,11 +812,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452525008155</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="更换第一章节中的图片">
+      <created>1452525402776</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1452525402776</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39236000" />
+    <option name="totallyTimeSpent" value="40082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -891,7 +891,8 @@
     <MESSAGE value="添加版本信息" />
     <MESSAGE value="介绍消息的历史" />
     <MESSAGE value="fixed 错别字" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed 错别字" />
+    <MESSAGE value="更换第一章节中的图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="更换第一章节中的图片" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1055,20 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.5540541">
-            <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/receive-message.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1089,8 +1076,22 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.27027026">
+          <first_editor vertical-scroll-proportion="-3.6216216">
             <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.6351351">
+            <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
             <folding />
           </first_editor>
           <second_editor />
