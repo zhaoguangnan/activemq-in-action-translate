@@ -46,7 +46,8 @@ ActiveMQ就是消息中间件，对商业系统提供异步的消息传输。通
 
     * RPC解决方案比如:COM,CORBA,DCE和EJB。
     * 事件通知解决方案,进程间通信，在进入操作系统消息排队，比如：FIFO buffer,message queues,pipes,signals,sockets等等。
-    * 消息中间件解决方案提供异步，可靠消息排队。比如：IBM WebSphere MQ,Sonic MQ,TIBCO Rendezvous,Apache Active MQ。一般应用于企业级集成的目的。
+    * 消息中间件解决方案提供异步，可靠消息排队。比如：IBM WebSphere MQ,Sonic MQ,TIBCO Rendezvous,Apache Active MQ。
+    一般应用于企业级集成的目的。
     
 我们将在这讨论最新的消息中间件产品，什么事正确的面相消息的中间件呢？
 

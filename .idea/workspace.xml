@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="add pic">
+    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
@@ -71,8 +71,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.8378378">
-                <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+              <first_editor vertical-scroll-proportion="0.7972973">
+                <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -747,7 +747,7 @@
       <workItem from="1452150633446" duration="8887000" />
       <workItem from="1452176558331" duration="2234000" />
       <workItem from="1452344593107" duration="7697000" />
-      <workItem from="1452523109778" duration="6959000" />
+      <workItem from="1452523109778" duration="7023000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -935,11 +935,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452559030567</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="第二章， 什么是面向消息的中间件">
+      <created>1452698077861</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1452698077861</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43924000" />
+    <option name="totallyTimeSpent" value="43988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1010,7 +1016,8 @@
     <MESSAGE value="fixed 错别字" />
     <MESSAGE value="更换第一章节中的图片" />
     <MESSAGE value="add pic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pic" />
+    <MESSAGE value="第二章， 什么是面向消息的中间件" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二章， 什么是面向消息的中间件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1208,8 +1215,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.8378378">
-            <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <first_editor vertical-scroll-proportion="0.7972973">
+            <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
