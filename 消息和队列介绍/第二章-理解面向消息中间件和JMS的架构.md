@@ -155,3 +155,52 @@ MessageProducer不仅提供了发送消息的方式也提供了设置各种消�
 方法可以立刻设置前面提到的三个设置。消息头部将在2.4.5中讨论。
 
 ##### JMS consumers
+
+JMS clients使用JMS MessageConsumer消费destination中的消息。MessageConsumer可以使用receive()方法同步消费消息，也可以使用MessageListener实现异步消费消息。当特定的destination
+消息到达时候调用MessageListener.onMessage()方法。下面展示MessageConsumer接口。
+
+列表2.1  JMS  MessageConsumer interface
+
+
+    * public interface MessageConsumer {
+              String getMessageSelector() throws JMSException;
+              MessageListener getMessageListener() throws JMSException;
+              void setMessageListener(MessageListener listener) throws JMSException;
+              Message receive() throws JMSException;
+              Message receive(long timeout) throws JMSException;
+              Message receiveNoWait() throws JMSException;
+              void close() throws JMSException;
+      }
+
+在MessageConsumer没有方法能设置destination，当使用 Session.createConsumer()创建consumer的时候设置destination。
+
+####2.4.2 Non-JMS clients
+
+正如前面所说的，non-JMS client使用JMS provider本地客户端API替代使用JMS API。native client API可能比JMS client API提供一些不一样的特性，这是他们之间的重要区别。所以non-JMS APIs
+CORBA IIOP协议或者其他本地协议而不仅仅是JAVA RMI协议了。消息providers通常会提供native API，但是许多消息providers也会提供 non-JMS client API。
+
+####2.4.3 JMS provider
+
+JMS provider是实现JMS API的具体MOM。所以实现通过标准的JMS API访问MOM(类似于JDBC)。
+
+####2.4.4 JMS message
+
+在JMS规范中JMS message是最重要的概念。每个JMS规范的的建立都是为了处理JMS message，因为它就是解决如何传递业务数据和事件的。JMS message允许任何形式数据作为消息的的一部分被发送，包括文本，二进制，
+还有头部信息。在图2.5中介绍JMS message包括两部分headers和payload。headers描述的是JMS clients和JMS providers使用消息的元数据。payload是真实的消息体并且通过各种类型的消息承载文本和二进制数据。
+JMS message被设计成容易理解而且灵活的。JMS message中复杂的的内容都在headers中。
+
+####2.4.5 JMS message的内部结构
+
+正如上文提到的，JMS message中复杂的部分都定义在headers中。实际上有两种类型的headers，它们主要的概念相同但是他们的语义不同。JMS规范提供了标准的头部和方法列表。properties基于原始的JAVA类型被设计成容易订制的。
+
+##### JMS MESSAGE HEADERS
+
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/2-F2.5.png)
+
+JMS message(图2.5)
+
+
+
+
+
+

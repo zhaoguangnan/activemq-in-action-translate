@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2-F2.5.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
@@ -31,8 +32,8 @@
       <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6139706" vertical-offset="2607" max-vertical-offset="3423">
-              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.6911765" vertical-offset="3615" max-vertical-offset="4452">
+              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -487,7 +488,7 @@
       <workItem from="1453801977915" duration="686000" />
       <workItem from="1453862853160" duration="6786000" />
       <workItem from="1453897053696" duration="631000" />
-      <workItem from="1453967977133" duration="4444000" />
+      <workItem from="1453967977133" duration="9838000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -729,14 +730,20 @@
       <option name="project" value="LOCAL" />
       <updated>1453969552750</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="jms productor intro complete">
+      <created>1453972440299</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1453972440299</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62295000" />
+    <option name="totallyTimeSpent" value="67689000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76707727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,7 +791,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="图片显示问题" />
     <MESSAGE value="下载安装activeMQ" />
     <MESSAGE value="安装java" />
     <MESSAGE value="修改翻译的目录名字" />
@@ -809,7 +815,8 @@
     <MESSAGE value="2.3 什么jms" />
     <MESSAGE value="2.3 什么jms save" />
     <MESSAGE value="2.3 什么jms complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.3 什么jms complete" />
+    <MESSAGE value="jms productor intro complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="jms productor intro complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1107,8 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6139706" vertical-offset="2607" max-vertical-offset="3423">
-          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.6911765" vertical-offset="3615" max-vertical-offset="4452">
+          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding />
         </state>
       </provider>
