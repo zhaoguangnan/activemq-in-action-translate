@@ -93,7 +93,15 @@ JMS允许一个客户端很容易链接到许多的JMS提供者(图2.4)
 
     * JMS client - 使用JAVA语言编写的发送和接收消息的应用。
     * None-JMS - 使用JMS provider 提供的本地API替代JMS发送和接收的消息。
+    * JMS producer - 创建和发送JMS消息的客户端应用。
+    * JMS consumer - 接收和处理JMS消息的客户端应用。
+    * JMS provider - 使用java语言编写的实现JMS接口。
+    * JMS message - JMS最基础的概念，被JMS发送和接收的单元。
+    * JMS domains - 两种消息传递方式，点对点和发布订阅。
+    * Administered objects - 预置的JMS对象，包括提供客户端使用特定的配置数据。这些对象是典型的侵入模式通过JNDI的方式。
+    * Connection factory - 客户端通过使用连接工厂创建到JMS provider之间的链接。
+    * Destination - messages接收和发送的地址。
 
-
+除了上面提及到的概念其他也很重要。接下来的几个章节将深入这些概念，重点介绍构成JMS的部分。
 
 
