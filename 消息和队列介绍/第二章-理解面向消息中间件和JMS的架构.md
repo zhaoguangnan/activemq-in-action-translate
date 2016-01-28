@@ -161,7 +161,6 @@ JMS clients使用JMS MessageConsumer消费destination中的消息。MessageConsu
 
 列表2.1  JMS  MessageConsumer interface
 
-
     * public interface MessageConsumer {
               String getMessageSelector() throws JMSException;
               MessageListener getMessageListener() throws JMSException;
@@ -199,7 +198,13 @@ JMS message被设计成容易理解而且灵活的。JMS message中复杂的的�
 
 JMS message(图2.5)
 
+正如图2.5中展示的那样，JMS messsages提供了标准头部列表，JMS APIs提供了使用的方法。许多headers信息是自动添加的。接着我们将介绍这些headers和他们是如何被定义的。
 
+当调用client的 send()方法时候头部是自动被设置的:
+
+    * JMSDestination -  destination表示的是消息被发送到哪个地址。这个值是提供给消费消息的clients消费的。
+    * JMSDeliveryMode -  JMS支持两种类型的消息交付模式：持久化模式和非持久化模式。持久化是默认的模式。每种模式有他自己的优缺点，意味着不同的可靠性级别。
+        持久化—
 
 
 
