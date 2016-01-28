@@ -92,7 +92,7 @@ JMS允许一个客户端很容易链接到许多的JMS提供者(图2.4)
 在标准化API，JMS正式定义了许多概念和从来没有过的消息：
 
     * JMS client - 使用JAVA语言编写的发送和接收消息的应用。
-    * None-JMS - 使用JMS provider 提供的本地API替代JMS发送和接收的消息。
+    * None-JMS client - 使用JMS provider 提供的本地API替代JMS发送和接收的消息。
     * JMS producer - 创建和发送JMS消息的客户端应用。
     * JMS consumer - 接收和处理JMS消息的客户端应用。
     * JMS provider - 使用java语言编写的实现JMS接口。
@@ -104,4 +104,54 @@ JMS允许一个客户端很容易链接到许多的JMS提供者(图2.4)
 
 除了上面提及到的概念其他也很重要。接下来的几个章节将深入这些概念，重点介绍构成JMS的部分。
 
+###2.4 JMS规范
 
+正如前面所说的，JMS规范定义了两种客户端类型(JMS客户端和非JMS客户端)。接下来将要简要介绍一下这两种方式的价值。
+
+####2.4.1 JMS client
+
+JMS client利用JMS API和JMS provider相互作用。概念类似于使用JDBC访问关系数据库，JMS client使用JMS API访问消息服务。许多JMS providers(包括ActiveMQ)有许多超远JMS规范的特性。
+JMS client 100%使用JMS APIs和避免使用扩展特性是有价值的。但是选择一个特殊的JMS providers经常是因为它提供的扩展功能。如果使用了扩展特性，如果不重构代码很难迁移到另一个JMS provider。
+
+JMS使用MessageProducer和MessageConsumer接口。JMS provider提供这些接口的实现是它的责任。JMS client发送消息叫做productor，JMS client接收消息叫做consumer。JMS client同时提供
+消息发送和接收是可能的。
+
+##### JMS productors
+
+JMS clients使用JMS MessageProducer类发送消息到destination。当使用Session.createProducer()方法创建productor的时候，默认的destination就被设置了。但是当通过MessageProducer.send()
+发送某个消息的时候可以被覆盖。下面将展示MessageProducer接口。
+
+列表2.1  MessageProducer interface
+
+    * public interface MessageProducer {
+              void setDisableMessageID(boolean value) throws JMSException;
+              boolean getDisableMessageID() throws JMSException;
+              void setDisableMessageTimestamp(boolean value) throws JMSException;
+              boolean getDisableMessageTimestamp() throws JMSException;
+              void setDeliveryMode(int deliveryMode) throws JMSException;
+              int getDeliveryMode() throws JMSException;
+              void setPriority(int defaultPriority) throws JMSException;
+              int getPriority() throws JMSException;
+              void setTimeToLive(long timeToLive) throws JMSException;
+              long getTimeToLive() throws JMSException;
+              Destination getDestination() throws JMSException;
+              void close() throws JMSException;
+              void send(Message message) throws JMSException;
+              void send(Message message, int deliveryMode, int priority,
+              long timeToLive)
+              throws JMSException;
+              void send(Destination destination, Message message)
+              throws JMSException;
+              void send(
+              Destination destination,
+              Message message,
+              int deliveryMode,
+              int priority,
+              long timeToLive)
+              throws JMSException;
+      }
+
+MessageProducer不仅提供了发送消息的方式也提供了设置各种消息头部（包括：JMSD eliveryMode,JMSPriority,JMSE xpiration）通过get/setTimeToLive()方法。而且可以利用send()
+方法可以立刻设置前面提到的三个设置。消息头部将在2.4.5中讨论。
+
+##### JMS consumers
