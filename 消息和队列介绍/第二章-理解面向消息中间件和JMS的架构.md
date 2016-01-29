@@ -220,6 +220,12 @@ JMS message(图2.5)
     设置个别被发送的消息过期时间。虽然通过MessageProducer.send()方法设置个别消息的过期时间，但是调用这些方法设置默认
     的时间毫秒数还需要深思。
 
+     JMSExpiration message header是通过增加当前的GMT时间计算的。默认的消息过期时间是零，意味着消息永远都不会过期。
+     如果明确指定过期时间为零，消息一样永久不会过期。
+
+     这个头部设置对时间敏感型的消息是非常有价值的。JMS provider不投递过期的消息，JMS client也被实现为不处理过期的消息。
+
+     * JMSMessageID - 
 
 
 
