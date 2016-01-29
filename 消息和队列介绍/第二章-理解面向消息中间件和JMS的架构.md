@@ -205,7 +205,22 @@ JMS message(图2.5)
     * JMSDestination -  destination表示的是消息被发送到哪个地址。这个值是提供给消费消息的clients消费的。
     * JMSDeliveryMode -  JMS支持两种类型的消息交付模式：持久化模式和非持久化模式。持久化是默认的模式。
       每种模式有他自己的优缺点，意味着不同的可靠性级别。
-        持久化—
+
+        持久化—如果要保证消息不丢失JMS provider需要开启持久化。JMS provider必须保证持久化消息的交付。
+        也就是说，如果JMS provider down了，消息不会丢失并且不会重复投递。持久化消息模式为了持久化存储和可靠性能
+        提出了更好的挑战。
+
+        非持久化—如果设置JMS provider非持久化消息。JMS provider必须保证仅有一次非持久化消息的投递。换句话说，
+        如果JMS provider down了，消息可能会丢失，但是也不会重复投递的。非持久化消息实现复杂度低而且性能优异。
+
+      在JMS producer设置交付模式并且应用于所有从这个producer中发送的消息。但是个别的消息也可以覆盖交付模式的设置。
+
+    * JMSExpiration - 消息的过期时间。这个头部设置是了防止过期的消息投递。JMS producer可以通过
+    MessageProducer.setTimeToLive()方法设置所有发送的消息全局过期时间，或者使用MessageProducer.send()方法
+    设置个别被发送的消息过期时间。虽然通过MessageProducer.send()方法设置个别消息的过期时间，但是调用这些方法设置默认
+    的时间毫秒数还需要深思。
+
+
 
 
 
