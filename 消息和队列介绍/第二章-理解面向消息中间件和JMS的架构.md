@@ -250,8 +250,8 @@ client 设置的可选头部选项：
         一个provider特定的message ID。
         一个特定应用的字符串。 
         一个本地provider byte[]数组值。
-     特定的provider message ID 将以ID开头：前缀，虽然特定的应用字符串不能以ID开头：前缀。如果JMS provider支持本地关联ID，JMS client
-     需要分配一个特殊的JMSCorrelationID去匹配non-JMS client期望的值，但是这不是必须的。
+     特定的provider message ID 将以ID开头：前缀，虽然特定的应用字符串不能以ID开头：前缀。如果JMS provider支持本地关联ID，
+     JMS client需要分配一个特殊的JMSCorrelationID去匹配non-JMS client期望的值，但是这不是必须的。
 
      * JMSReplyTo - 被用作指定一个发送的destination。这个header通常被request/reply模式的消息传递。设置这个header期望一个相应，
      但这不是必须的。client决定响应或者不响应。
@@ -260,7 +260,7 @@ client 设置的可选头部选项：
      
 provider 设置的可选头部选项：
      
-     * JMSRedelivered - 表示之前可能交付一个消息，但是没有ack。这种情况是可能发生的比如：consumer没有确认交付或者由于provider抛出了异常导致
-     provider拒绝接受了ack。
+     * JMSRedelivered - 表示之前可能交付一个消息，但是没有ack。这种情况是可能发生的比如：consumer没有确认交付或者由于provider
+     抛出了异常导致provider拒绝接受了ack。
 
 ##### JMS MESSAGE PROPERTIES

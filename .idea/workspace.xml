@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.69753087">
-                <caret line="265" column="28" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+              <first_editor vertical-scroll-proportion="0.8703704">
+                <caret line="263" column="12" selection-start-line="263" selection-start-column="12" selection-end-line="263" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -453,7 +453,7 @@
       <workItem from="1453897053696" duration="631000" />
       <workItem from="1453967977133" duration="11361000" />
       <workItem from="1454034186263" duration="2552000" />
-      <workItem from="1454212648266" duration="6726000" />
+      <workItem from="1454212648266" duration="6901000" />
     </task>
     <task id="LOCAL-00001" summary="第一小节内容complete">
       <created>1452136087817</created>
@@ -737,11 +737,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454218461941</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="jms header 翻译结束">
+      <created>1454243884890</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1454243884890</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78490000" />
+    <option name="totallyTimeSpent" value="78665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -789,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="activeMQ 目录文件" />
     <MESSAGE value="start activeMQ" />
     <MESSAGE value="目录解释" />
     <MESSAGE value="介绍企业级消息传递" />
@@ -814,7 +819,8 @@
     <MESSAGE value="formate" />
     <MESSAGE value="jms message 过期时间" />
     <MESSAGE value="jms header 选项介绍" />
-    <option name="LAST_COMMIT_MESSAGE" value="jms header 选项介绍" />
+    <MESSAGE value="jms header 翻译结束" />
+    <option name="LAST_COMMIT_MESSAGE" value="jms header 翻译结束" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1173,8 +1179,8 @@
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.69753087">
-            <caret line="265" column="28" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+          <first_editor vertical-scroll-proportion="0.8703704">
+            <caret line="263" column="12" selection-start-line="263" selection-start-column="12" selection-end-line="263" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
