@@ -225,8 +225,32 @@ JMS message(图2.5)
 
      这个头部设置对时间敏感型的消息是非常有价值的。JMS provider不投递过期的消息，JMS client也被实现为不处理过期的消息。
 
-     * JMSMessageID - 
-
+     * JMSMessageID - 由JMS provider分配的唯一标识一个消息的字符串。message ID应用于消息的处理，历史消息的存储。由于
+     message IDs导致JMS provider一些问题，所以productor通过MessageProducer.setDisableMessageID()方法设置header
+     可以建议JMS provider使的JMS应用忽略这个header。如果JMS provider接受了这个建议，那么message ID必须设置为null，
+     JMS provider将忽略这个头部，并且分配一个message ID。
+     
+     * JMSPriority - 用于分配message的重要级别。这个header也是被producter设置的。一旦设置了message的优先级，将应用
+     所有从producter发送出去的消息。也可以设置个别消息的优先级。JMS定义了10种优先级从0到9。
+     
+        优先级0-4 - 表示普通的优先级。
+        优先级5-9 - 表示快速的优先级。
+        
+     JMS providers不需要实现消息排序（但是大多数还是实现了）。优先级的目的只是先交付高优先级的消息。
+     
+     * JMSTimestamp - 这个header表示的是从producter发送出去的时间戳。这个头部使用的是标准的JAVA毫秒值。类似于 JMSMessageID
+      header，producter可以通过Producer.setDisableMessageTimestamp()建议JMS provider JMSTimestamp header不是必须的。
+     如果JMS provider接受了建议JMSTimestamp header必须设置为0。 
+     
+client 可选的头部选项：
+     
+     * JMSCorrelationID - 被用作关联当前消息和上一个消息。这个header通常用作关联请求消息和相应消息。JMSCorrelationID的值可以是
+     下列任何一个：
+        
+        一个provider特定的message ID。
+        一个特定应用的字符串。 
+        一个本地provider byte[]数组值。
+     
 
 
 
