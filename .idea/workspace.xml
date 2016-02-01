@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2-F2.6.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
@@ -31,8 +32,8 @@
       <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9464286" vertical-offset="7658" max-vertical-offset="8652">
-              <caret line="400" column="59" selection-start-line="400" selection-start-column="59" selection-end-line="400" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.65178573" vertical-offset="7973" max-vertical-offset="8841">
+              <caret line="404" column="39" selection-start-line="404" selection-start-column="39" selection-end-line="404" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -503,13 +504,7 @@
       <workItem from="1453967977133" duration="11361000" />
       <workItem from="1454034186263" duration="2552000" />
       <workItem from="1454212648266" duration="6901000" />
-      <workItem from="1454292655694" duration="18904000" />
-    </task>
-    <task id="LOCAL-00006" summary="add 紧耦合图片">
-      <created>1452140737086</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1452140737086</updated>
+      <workItem from="1454292655694" duration="20276000" />
     </task>
     <task id="LOCAL-00007" summary="add 紧耦合图片">
       <created>1452140833418</created>
@@ -799,11 +794,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454316129202</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="ptp">
+      <created>1454320712495</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1454320712495</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97569000" />
+    <option name="totallyTimeSpent" value="98941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -854,7 +855,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="介绍消息的历史" />
     <MESSAGE value="更换第一章节中的图片" />
     <MESSAGE value="add pic" />
     <MESSAGE value="第二章， 什么是面向消息的中间件" />
@@ -879,7 +879,8 @@
     <MESSAGE value="jms selector 解析" />
     <MESSAGE value="fixed stock" />
     <MESSAGE value="2.4.6 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.4.6 finished" />
+    <MESSAGE value="ptp" />
+    <option name="LAST_COMMIT_MESSAGE" value="ptp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1232,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9464286" vertical-offset="7658" max-vertical-offset="8652">
-          <caret line="400" column="59" selection-start-line="400" selection-start-column="59" selection-end-line="400" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.65178573" vertical-offset="7973" max-vertical-offset="8841">
+          <caret line="404" column="39" selection-start-line="404" selection-start-column="39" selection-end-line="404" selection-end-column="39" />
           <folding />
         </state>
       </provider>

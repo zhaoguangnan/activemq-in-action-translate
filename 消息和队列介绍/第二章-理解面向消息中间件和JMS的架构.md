@@ -398,8 +398,17 @@ JMS定义了六种类型的message body也就是指payload。通过使用这些o
 
 ##### THE POINT-TO-POINT DOMAIN
 
-point-to-point(PTP)使用的destinations就是我们说的queues。通过使用queues消息通过同步或者异步的方式接收和发送。
+point-to-point(PTP)使用的destinations就是我们说的queues。message使用queues通过同步或者异步的方式接收和发送。每一个从queue中message只能被交付给一个consumer一次。
+这种方式类似于person-to-person email的方式。consumers接收消息通过MessageConsumer.receive()方法同步接收消息或者通过MessageConsumer.setMessage.Listener()
+方法注册一个MessageListener实现异步接收message。queue将存储所有消息直到message被交付或者过期。
 
+图2.6展示了许多consumers可以注册到同一个queue上，但是只有一个consumer可以收到这个消息然后consumer将会确认收到这个消息。注意图2.6展示了从一个productor发送消息交付给了
+一个consumer而不是所有的consumers。就像前面提到的，JMS provider确保消息交付一次而且仅此一次到可用的注册在这个queue上的consumer。在这点上，JMS provider以循环的方式
+访问所有的注册在queue上的consumers分配messsage。
+
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/2-F2.6.png)
+
+点对点的消息传递模式(图2.6)
 
 
 
