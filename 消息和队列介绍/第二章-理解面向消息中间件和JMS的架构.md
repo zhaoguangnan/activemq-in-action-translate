@@ -225,33 +225,7 @@ JMS message(图2.5)
 
      这个头部设置对时间敏感型的消息是非常有价值的。JMS provider不投递过期的消息，JMS client也被实现为不处理过期的消息。
 
-     * JMSMessageID - 由JMS provider分配的唯一标识一个消息的字符串。message ID应用于消息的处理，历史消息的存储。由于
-     message IDs导致JMS provider一些问题，所以productor通过MessageProducer.setDisableMessageID()方法设置header
-     可以建议JMS provider使的JMS应用忽略这个header。如果JMS provider接受了这个建议，那么message ID必须设置为null，
-     JMS provider将忽略这个头部，并且分配一个message ID。
-     
-     * JMSPriority - 用于分配message的重要级别。这个header也是被producter设置的。一旦设置了message的优先级，将应用
-     所有从producter发送出去的消息。也可以设置个别消息的优先级。JMS定义了10种优先级从0到9。
-     
-        优先级0-4 - 表示普通的优先级。
-        优先级5-9 - 表示快速的优先级。
-        
-     JMS providers不需要实现消息排序（但是大多数还是实现了）。优先级的目的只是先交付高优先级的消息。
-     
-     * JMSTimestamp - 这个header表示的是从producter发送出去的时间戳。这个头部使用的是标准的JAVA毫秒值。类似于 JMSMessageID
-      header，producter可以通过Producer.setDisableMessageTimestamp()建议JMS provider JMSTimestamp header不是必须的。
-     如果JMS provider接受了建议JMSTimestamp header必须设置为0。 
-     
-client 设置的可选头部选项：
-     
-     * JMSCorrelationID - 被用作关联当前消息和上一个消息。这个header通常用作关联请求消息和相应消息。
-     JMSCorrelationID的值可以是下列任何一个：
-        
-        一个provider特定的message ID。
-        一个特定应用的字符串。 
-        一个本地provider byte[]数组值。
-     特定的provider message ID 将以ID开头：前缀，虽然特定的应用字符串不能以ID开头：前缀。如果JMS provider支持本地关联ID，
-     JMS client需要分配一个特殊的JMSCorrelationID去匹配non-JMS client期望的值，但是这不是必须的。
+     * JMSMessageID - 
 
      * JMSReplyTo - 被用作指定一个发送的destination。这个header通常被request/reply模式的消息传递。设置这个header期望一个相应，
      但这不是必须的。client决定响应或者不响应。
@@ -264,3 +238,36 @@ provider 设置的可选头部选项：
      抛出了异常导致provider拒绝接受了ack。
 
 ##### JMS MESSAGE PROPERTIES
+
+properties可以被简单的添加到一个消息的header中。JMS provides可以通过通用的方法自定义headers。方法对headers的值提供了许多JAVA原始类型
+包括：boolen,byte,short,int,long,float,double,String,Object类型。下列展示的Message接口的一些例子:
+
+列表2.3  JMS Message interface
+
+    * public interface Message {
+      ...
+      boolean getBooleanProperty(String name) throws JMSException;
+      byte getByteProperty(String name) throws JMSException;
+      short getShortProperty(String name) throws JMSException;
+      int getIntProperty(String name) throws JMSException;
+      long getLongProperty(String name) throws JMSException;
+      float getFloatProperty(String name) throws JMSException;
+      double getDoubleProperty(String name) throws JMSException;
+      String getStringProperty(String name) throws JMSException;
+      Object getObjectProperty(String name) throws JMSException;
+      ...
+      Enumeration getPropertyNames() throws JMSException;
+      boolean propertyExists(String name) throws JMSException;
+      ...
+      void setBooleanProperty(String name, boolean value) throws JMSException;
+      void setByteProperty(String name, byte value) throws JMSException;
+      void setShortProperty(String name, short value) throws JMSException;
+      void setIntProperty(String name, int value) throws JMSException;
+      void setLongProperty(String name, long value) throws JMSException;
+      void setFloatProperty(String name, float value) throws JMSException;
+      void setDoubleProperty(String name, double value) throws JMSException;
+      void setStringProperty(String name, String value) throws JMSException;
+      void setObjectProperty(String name, Object value) throws JMSException;
+      .. }
+
+
