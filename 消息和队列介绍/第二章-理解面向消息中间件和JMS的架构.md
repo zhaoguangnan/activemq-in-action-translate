@@ -410,6 +410,13 @@ point-to-point(PTP)使用的destinations就是我们说的queues。message使用
 
 点对点的消息传递模式(图2.6)
 
+##### THE PUBLISH/SUBSCRIBE DOMAIN
 
+publish/subscribe (pub/sub)消息传递方式就是所说的topics。发布者发送message到topic，订阅者从topic注册并接收message。任何发送到topic中的消息会被自动交付到所有的订阅者中。
+这种消息传递模式就像是订阅邮件列表一样在one-to-many模式中，所有的消息将发送给所有邮件列表中的订阅者。在图2.7中描述的是pub/sub模式。
+
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/2-F2.7.png)
+
+发布/订阅使用one-to-many消息传递模式(图2.7)
 
 
