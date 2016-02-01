@@ -324,7 +324,7 @@ selectors对已经通过的selectors使用条件表达式作为字符串参数�
 | Identifiers     | 一个header或者property的字段     |
 | Operators     | 比较运算符  AND, OR, LIKE, BETWEEN, =, <>, <, >, <=, =>, +, -, *, /, IS NULL, IS NOT NULL    |
 
-表格2.1展示针对message headers和properties创建queries。思考下列定义的消息。在接下来的例子中定义了两个将要被使用作为消息过滤的properties。
+表格2.1展示针对message headers和properties创建queries。思考下列定义的message。在接下来的例子中定义了两个将要被使用作为message过滤的properties。
 
 
 列表2.4 自定义JMS message
@@ -343,9 +343,9 @@ selectors对已经通过的selectors使用条件表达式作为字符串参数�
           producer.send(destination, textMessage);
       }
 
-现在让我们看看使用上面的消息通过message selectors过滤消息的例子。
+现在让我们看看使用上面的message通过message selectors过滤message的例子。
 
-列表2.5 使用SYMBOL header过滤消息
+列表2.5 使用SYMBOL header过滤message
 
     * ...
       String selector = "SYMBOL = 'AAPL'";
@@ -353,9 +353,9 @@ selectors对已经通过的selectors使用条件表达式作为字符串参数�
       session.createConsumer(destination, selector);
       ...
 
-列表2.5定义一个selector苹果公司的消息。这个consumer只接收匹配定义到selector的消息。
+列表2.5定义一个selector苹果公司的message。这个consumer只接收匹配定义到selector的message。
 
-列表2.6 使用SYMBOL和PRICE header过滤消息
+列表2.6 使用SYMBOL和PRICE header过滤message
 
     * ...
       String selector = "SYMBOL = 'AAPL' AND PRICE > "
@@ -364,4 +364,32 @@ selectors对已经通过的selectors使用条件表达式作为字符串参数�
       session.createConsumer(destination, selector);
       ...
 
-上面是一个只匹配苹果公司消息的selector。谁的价格比上一个价格要大。这个selector将展示股票信息中谁的价格在变大。
+上面是一个只匹配苹果公司message的selector。谁的价格比上一个价格要大。这个selector将展示股票信息中谁的价格在变大。除了股票和代码你想要知道什么股票的及时性信息？
+下面的例子是你需要关心的。
+
+列表2.7 使用headers过滤messages
+
+    * ...
+      String selector = "SYMBOL IN ('AAPL', 'CSCO') AND PRICE > "
+      + getPreviousPrice() + " AND PE_RATIO < "
+      + getCurrentAcceptedPriceToEarningsRatioThreshold();
+      MessageConsumer consumer =
+      session.createConsumer(destination, selector);
+      ...
+
+在2.7列表中定义了更加复杂的selector匹配苹果公司和思科公司的message(哪家的股票在涨和哪家收益率小于公认的阀值)。
+这些例子已经足够你使用message selectors的了。但是如果你想深入可以参考JMS message的Javadoc。
+
+##### MESSAGE BODY
+
+JMS定义了六种类型的message body也就是指payload。通过使用这些objects，数据和信息可以通过messsage payload发送出去。
+
+    * Message - 最基础的消息类型。被使用在没有payload，只有headers和properties的消息中。典型的使用就是事件通知。
+    * TextMessage - message payload是字符串。通常使用其发送文本和xml数据。
+    * MapMessage - 使用name/value集合作为payload。names是String类型的，values是JAVA原始类型。
+    * BytesMessage - 包含一个bytes数组作为payload。
+    * StreamMessage - message中包含JAVA类型的stream可以连续的填充和读取。
+    * ObjectMessage - 使用序列化的JAVA Object作为payload。通常对于复杂的java objects使用，也支持java collections类。
+
+####2.4.7 JMS domains
+
