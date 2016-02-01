@@ -270,4 +270,40 @@ properties可以被简单的添加到一个消息的header中。JMS provides可�
       void setObjectProperty(String name, Object value) throws JMSException;
       .. }
 
+getPropertyNames()和propertyExists()方法是两个常用操作properties的方法。getPropertyNames()方法通过迭代获取properties Enumeration。
+propertyExists()方法可以测试给定的message是否存在指定的property。注意特定的JMS headers包含不通用的properties，不能通过getPropertyNames()
+方法获取到。
+有三种类型的properties：自定义properties，JMS定义的properties，特定的provider properties。
+
+##### CUSTOM PROPERTIES(自定义properties)
+
+自定义properties由于JMS应用随意定义的。JMS应用的开发者可以自由定义任何JAVA类型的属性，通过通用的方法（上一小节中展示的那些方法：getBooleanProperty()/
+setBooleanProperty() ,  getStringProperty()/setStringProperty()等等）。
+
+##### JMS-DEFINED PROPERTIES(JMS定义的properties)
+
+JMS规范对于JMS-defined properties包含了JMSX属性名前缀，并且支持如下属性选项：
+
+    * JMSXAppID - 标识应用发送的message。
+    * JMSXConsumerTXID - 表示被消费需要事物message的事物标识。
+    * JMSXDeliveryCount - 表示message交付次数。
+    * JMSXGroupID - 表示message所属于的分组。
+    * JMSXGroupSeq - 表示一个组内的顺序编号。
+    * JMSXProducerTXID - 表示事物消息被生产出来的事物标识。
+    * JMSXRcvTimestamp  - 表示JMS provider交付消息给consumer的时间。
+    * JMSXState  - 被用作定义指定provider的状态。
+    * JMSXUserID  - 标识发送消息的用户。
+
+JMS规范对这些properties唯一的建议就是JMSXGroupID和JMSXGroupSeq，当组内消息或者组内消息排序的时候在客户端这两个属性必须被使用。
+
+##### PROVIDER-SPECIFIC PROPERTIES(provider特有的properties)
+
+JMS规范涵盖了对于具体provider properties特有的属性名前缀(JMS_<vendor-name>)。每个provider定义自己的名字替换<vendor-name>。
+最典型的使用是在具体的non-JMS clients中，并且不应该使用在JMS-to-JMS的消息传递中。
+
+现在jms headrs和properties如何准确的使用它们已经介绍结束了。headers和properties在client 订阅一个destination过滤接收到的消息的时候是非常重要的。
+
+####2.4.6 Message selectors
+
+
 
