@@ -419,4 +419,11 @@ publish/subscribe (pub/sub)消息传递方式就是所说的topics。发布者�
 
 发布/订阅使用one-to-many消息传递模式(图2.7)
 
+大致像上一节中提及到的PTP模式，订阅者在topic注册通过使用MessageConsumer.receive()同步接收message，或者注册一个MessageListener的实现使用MessageConsumer.setMessageListener()
+方法异步的接收消息。topics不会保存消息除非明确指定要保存，但是通过durable subscription(持久化订阅)可以做到这点。当一个订阅者从JMS provider中断开时候使用持久化订阅。为订阅者提供消息持久化
+是provider的责任。当重新接连后，订阅者将从JMS provider中收到所有没有过期的消息。持久化订阅允许订阅者断开链接但是不会丢失任何消息。
+
+##### DISTINGUISHING MESSAGE DURABILITY FROM MESSAGE PERSISTENCE
+
+message durability和message persistence这两个概念经常混淆。
 
