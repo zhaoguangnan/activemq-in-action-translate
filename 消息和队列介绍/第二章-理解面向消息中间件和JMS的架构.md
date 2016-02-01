@@ -306,7 +306,7 @@ JMS规范涵盖了对于具体provider properties特有的属性名前缀(JMS_<v
 ####2.4.6 Message selectors
 
 当client订阅一个destination成倍的消息，但是可以按message类型过滤收到的消息(这就是headers和properties使用的地方)。比如：一个consumer注册从一个queue中获取
-消息仅仅是关心消息的存货详情，每个消息都包含一个属性标识消息库存是非常容易的。JMS client可以利用JMS message selectors告诉JMS provider它只接收包含指定propert值
+消息仅仅是关心特定的股票代码，每个消息都包含一个属性标识感兴趣的股票代码是非常容易的。JMS client可以利用JMS message selectors告诉JMS provider它只接收包含指定propert值
 的消息。
 
 Message selectors允许JMS client通过基于message headers从destination接收它想要的接收的messages。selectors是SQL92表达式的子集。使用boolen表达式，
@@ -323,3 +323,45 @@ selectors对已经通过的selectors使用条件表达式作为字符串参数�
 | Literals      | boolen值 true/false;数字比如：5,-10,+34;小数或者科学计数比如： 43.3E7, +10.5239|
 | Identifiers     | 一个header或者property的字段     |
 | Operators     | 比较运算符  AND, OR, LIKE, BETWEEN, =, <>, <, >, <=, =>, +, -, *, /, IS NULL, IS NOT NULL    |
+
+表格2.1展示针对message headers和properties创建queries。思考下列定义的消息。在接下来的例子中定义了两个将要被使用作为消息过滤的properties。
+
+
+列表2.4 自定义JMS message
+
+    * public void sendStockMessage(Session session,
+          MessageProducer producer,
+          Destination destination,
+          String payload,
+          String symbol,
+          double price)
+          throws JMSException {
+          TextMessage textMessage = session.createTextMessage();
+          textMessage.setText(payload);
+          textMessage.setStringProperty("SYMBOL", symbol);
+          textMessage.setDoubleProperty("PRICE", price);
+          producer.send(destination, textMessage);
+      }
+
+现在让我们看看使用上面的消息通过message selectors过滤消息的例子。
+
+列表2.5 使用SYMBOL header过滤消息
+
+    * ...
+      String selector = "SYMBOL = 'AAPL'";
+      MessageConsumer consumer =
+      session.createConsumer(destination, selector);
+      ...
+
+列表2.5定义一个selector苹果公司的消息。这个consumer只接收匹配定义到selector的消息。
+
+列表2.6 使用SYMBOL和PRICE header过滤消息
+
+    * ...
+      String selector = "SYMBOL = 'AAPL' AND PRICE > "
+      + getPreviousPrice();
+      MessageConsumer consumer =
+      session.createConsumer(destination, selector);
+      ...
+
+上面是一个只匹配苹果公司消息的selector。谁的价格比上一个价格要大。这个selector将展示股票信息中谁的价格在变大。
