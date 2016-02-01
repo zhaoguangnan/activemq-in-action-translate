@@ -305,5 +305,21 @@ JMS规范涵盖了对于具体provider properties特有的属性名前缀(JMS_<v
 
 ####2.4.6 Message selectors
 
-当client订阅一个destination成倍的消息，但是可以按message类型过滤收到的消息(这就是headers和properties使用的地方)。比如：
+当client订阅一个destination成倍的消息，但是可以按message类型过滤收到的消息(这就是headers和properties使用的地方)。比如：一个consumer注册从一个queue中获取
+消息仅仅是关心消息的存货详情，每个消息都包含一个属性标识消息库存是非常容易的。JMS client可以利用JMS message selectors告诉JMS provider它只接收包含指定propert值
+的消息。
 
+Message selectors允许JMS client通过基于message headers从destination接收它想要的接收的messages。selectors是SQL92表达式的子集。使用boolen表达式，
+message selectors使用message headers和properties作为简单boolen比较的标准。messages不匹配这些表达式就不能被交付到client。Message selectors不能
+用message payload作为参照，只能使用headers和properties。
+
+selectors对已经通过的selectors使用条件表达式作为字符串参数使用javax.jms.Session对象创建的方法。直接从SQL92解析这些表达式使用各种标示符，文字和运算符。表格2.1
+中定义：
+
+表格2.1 JMS selector syntax
+
+| Item | Values          |
+| ------------- | ----------- |
+| Literals      | boolen值 true/false;数字比如：5,-10,+34;小数或者科学计数比如： 43.3E7, +10.5239|
+| Identifiers     | 一个header或者property的字段     |
+| Operators     | 比较运算符  AND, OR, LIKE, BETWEEN, =, <>, <, >, <=, =>, +, -, *, /, IS NULL, IS NOT NULL    |

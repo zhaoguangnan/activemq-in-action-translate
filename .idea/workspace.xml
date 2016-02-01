@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.575758" vertical-offset="5702" max-vertical-offset="6615">
-              <caret line="307" column="81" selection-start-line="307" selection-start-column="81" selection-end-line="307" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.9494585" vertical-offset="6015" max-vertical-offset="6951">
+              <caret line="324" column="25" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -42,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1013269" vertical-offset="0" max-vertical-offset="829">
+            <state vertical-scroll-proportion="-2.5454545" vertical-offset="0" max-vertical-offset="378">
               <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
               <folding />
             </state>
@@ -66,8 +65,8 @@
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md" />
-        <option value="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
       </list>
     </option>
   </component>
@@ -77,10 +76,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="457" />
+    <option name="y" value="4" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -431,13 +430,7 @@
       <workItem from="1453967977133" duration="11361000" />
       <workItem from="1454034186263" duration="2552000" />
       <workItem from="1454212648266" duration="6901000" />
-      <workItem from="1454292655694" duration="9713000" />
-    </task>
-    <task id="LOCAL-00002" summary="为什么何时使用activemq">
-      <created>1452137426512</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1452137426512</updated>
+      <workItem from="1454292655694" duration="12442000" />
     </task>
     <task id="LOCAL-00003" summary="松耦合">
       <created>1452140342447</created>
@@ -727,14 +720,20 @@
       <option name="project" value="LOCAL" />
       <updated>1454307269094</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="readme合作邀请">
+      <created>1454309635996</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1454309635996</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88378000" />
+    <option name="totallyTimeSpent" value="91107000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="457" y="4" width="1936" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76707727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -751,7 +750,7 @@
       <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2735043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2735043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -782,7 +781,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="介绍企业级消息传递" />
     <MESSAGE value="介绍企业级消息传递历史" />
     <MESSAGE value="添加书籍目录" />
     <MESSAGE value="添加版本信息" />
@@ -807,7 +805,8 @@
     <MESSAGE value="jms header 翻译结束" />
     <MESSAGE value="jms properties" />
     <MESSAGE value="2.4.5 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.4.5 finished" />
+    <MESSAGE value="readme合作邀请" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme合作邀请" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1144,10 +1143,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.575758" vertical-offset="5702" max-vertical-offset="6615">
-          <caret line="307" column="81" selection-start-line="307" selection-start-column="81" selection-end-line="307" selection-end-column="81" />
+        <state vertical-scroll-proportion="-2.5454545" vertical-offset="0" max-vertical-offset="378">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
           <folding />
         </state>
       </provider>
@@ -1158,10 +1157,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1013269" vertical-offset="0" max-vertical-offset="829">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.9494585" vertical-offset="6015" max-vertical-offset="6951">
+          <caret line="324" column="25" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="25" />
           <folding />
         </state>
       </provider>
