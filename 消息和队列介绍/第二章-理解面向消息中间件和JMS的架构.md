@@ -393,3 +393,14 @@ JMS定义了六种类型的message body也就是指payload。通过使用这些o
 
 ####2.4.7 JMS domains
 
+之前提到过，JMS的创建是组织的努力，group包含消息实现的厂商。由于现存的实现导致JMS定义了两种类型的消息传递方式point-to-point和publish/subscribe。大多数的MOMs已经实现了这两种消息
+传递方式。所以很自然JMS API也支持两种方式。让我们讨论一下两种消息传递的方式以便于让我们更好的理解他们。
+
+##### THE POINT-TO-POINT DOMAIN
+
+point-to-point(PTP)使用的destinations就是我们说的queues。通过使用queues消息通过同步或者异步的方式接收和发送。
+
+
+
+
+
