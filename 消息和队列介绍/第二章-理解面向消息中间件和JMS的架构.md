@@ -305,5 +305,5 @@ JMS规范涵盖了对于具体provider properties特有的属性名前缀(JMS_<v
 
 ####2.4.6 Message selectors
 
-
+当client订阅一个destination成倍的消息，但是可以按message类型过滤收到的消息(这就是headers和properties使用的地方)。比如：
 
