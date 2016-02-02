@@ -454,3 +454,18 @@ QueueRequestor和TopicRequestor这两个类方便处理基于request/reply模式
 和TopicRequestor可以处理基本的request/reply，但是不支持更复杂的request/reply cases。比如：一个请求从多个recirves返回多个响应。复杂的应用场景需要自定义开发JMS应用。
 
 ####2.4.8 Administered objects
+
+Administered objects包含具体的JMS provider配置信息并且假设是由JMS administrator创建的。Administered objects由JMS clients创建。它们屏蔽了特定JMS provider详细信息并且抽象了JMS provider管理工作。
+通常通过JNDI查找受管理的对象，但是这不是必须的。当JMS provider存在于JAVAEE容器中的时候这种方式是最通常的用法。JMS规范定义了两种受管理的对象:ConnectionFactory和Destination。
+
+##### CONNECTIONFACTORY(链接工厂)
+
+JMS clients使用ConnectionFactory对象创建到JMS provider的链接。链接工厂代表在client和provider中间打开一个TCP socket，所以链接成本是巨大的。如果可能实现一个连接池是一个很好的注意。链接到JMS provider类似于
+JDBC链接到数据库。JMS clients创建javax.jms.Session objects，使用JMS connections链接到JMS provider。
+
+##### DESTINATION
+
+Destination对象封装具体JMS provider的地址(消息被发送到的和从中消费的地址)。destinations是由Session object创建的，他们生命周期的开始于session的创建。
+Temporary destinations由独立的链接创建。它们的生命周期和创建他们的链接一样长，只有创建他们的链接才能创建消费者消费他们。正如上面提到的，temporary destinations通常用在request/reply请求响应模式的message传递中。
+
+###2.5 使用JMS APIs创建JMS应用
