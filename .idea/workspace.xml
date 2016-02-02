@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="durabiletye">
+    <list default="true" id="4bc44fb2-2db8-477d-a663-0d9162934edf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" afterPath="$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md" />
     </list>
@@ -30,14 +30,14 @@
     <leaf>
       <file leaf-file-name="第二章-理解面向消息中间件和JMS的架构.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73214287" vertical-offset="8288" max-vertical-offset="9135">
-              <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7683824" vertical-offset="8466" max-vertical-offset="9324">
+              <caret line="433" column="39" selection-start-line="433" selection-start-column="39" selection-end-line="433" selection-end-column="39" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -93,6 +93,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,8 +143,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -490,13 +490,8 @@
       <workItem from="1453967977133" duration="11361000" />
       <workItem from="1454034186263" duration="2552000" />
       <workItem from="1454212648266" duration="6901000" />
-      <workItem from="1454292655694" duration="22386000" />
-    </task>
-    <task id="LOCAL-00009" summary="何时使用ActiveMQ">
-      <created>1452145705894</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1452145705894</updated>
+      <workItem from="1454292655694" duration="22395000" />
+      <workItem from="1454379022598" duration="4339000" />
     </task>
     <task id="LOCAL-00010" summary="图片显示问题">
       <created>1452145798681</created>
@@ -786,11 +781,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454323876965</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="message durability和message persistence">
+      <created>1454324723375</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1454324723375</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101051000" />
+    <option name="totallyTimeSpent" value="105399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -799,7 +800,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76707727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -821,6 +821,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -841,7 +842,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="第二章， 什么是面向消息的中间件" />
     <MESSAGE value="fixed 错别字" />
     <MESSAGE value="mom 介绍" />
     <MESSAGE value="什么是面向消息的中间件 ok" />
@@ -866,7 +866,8 @@
     <MESSAGE value="ptp" />
     <MESSAGE value="ptp finished" />
     <MESSAGE value="pub/sub 模式翻译" />
-    <option name="LAST_COMMIT_MESSAGE" value="pub/sub 模式翻译" />
+    <MESSAGE value="message durability和message persistence" />
+    <option name="LAST_COMMIT_MESSAGE" value="message durability和message persistence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -874,25 +875,35 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
@@ -906,57 +917,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/receive-message.png">
@@ -965,34 +975,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/receive-message.png">
@@ -1001,34 +1011,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/receive-message.png">
@@ -1037,34 +1047,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/receive-message.png">
@@ -1073,25 +1083,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
@@ -1119,53 +1129,53 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1186,15 +1196,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第一章-介绍ActiveMQ.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>
@@ -1209,30 +1219,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1013269" vertical-offset="0" max-vertical-offset="829">
           <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/消息和队列介绍/第二章-理解面向消息中间件和JMS的架构.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73214287" vertical-offset="8288" max-vertical-offset="9135">
-          <caret line="422" column="30" selection-start-line="422" selection-start-column="30" selection-end-line="422" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.7683824" vertical-offset="8466" max-vertical-offset="9324">
+          <caret line="433" column="39" selection-start-line="433" selection-start-column="39" selection-end-line="433" selection-end-column="39" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>

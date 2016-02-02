@@ -425,5 +425,15 @@ publish/subscribe (pub/sub)消息传递方式就是所说的topics。发布者�
 
 ##### DISTINGUISHING MESSAGE DURABILITY FROM MESSAGE PERSISTENCE
 
-message durability和message persistence这两个概念经常混淆。
+message durability和message persistence这两个概念经常混淆。虽然他们很相似，但是他们在语意上有各自的目的。Message durability只能用在pub/sub方式中。当client链接到一个topic时，
+可以使用持久化订阅或者非持久化订阅。思考两者之间的区别：
 
+    * Durable subscription - 持久化订阅意味着空间是极大的。订阅topic就是告诉JMS provider当subscriber断连的时候保存订阅状态。
+    JMS provider将存储所有的message直至subscriber重新链接或者subscriber明确指定取消了对这个topic的订阅。
+    * Nondurable subscription - 非持久化订阅空间吃有限的。阅topic就是告诉JMS provider当subscriber断连的时候不保存订阅状态。
+    JMS provider在subscriber断开链接的期间将不保存任何消息。
+
+Message persistence是独立的message domain。Message persistence是服务质量属性，表明在JMS provider failure的时候处理丢失消息的能力。正如前面讨论的，这个服务质量是在message
+producter的setDeliveryMode(JMSDeliveryMode class的PERSISTENT和NON-PERSISTENT properties作为参数)指定的。
+
+##### 在JMS应用中Request/reply消息传递
