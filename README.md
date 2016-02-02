@@ -10,7 +10,7 @@ ActiveMQ in action 书籍翻译
 
 [第一章-介绍ActiveMQ](./介绍消息传递和ActiveMQ/第一章-介绍ActiveMQ.md)[100%]
 
-[第二章-理解面向消息中间件和JMS的架构](./介绍消息传递和ActiveMQ/第二章-理解面向消息中间件和JMS的架构.md)[50%]
+[第二章-理解面向消息中间件和JMS的架构](./介绍消息传递和ActiveMQ/第二章-理解面向消息中间件和JMS的架构.md)[90%]
 
 [第三章-ActiveMQ实战例子](./介绍消息传递和ActiveMQ/第三章-ActiveMQ实战例子.md)[0%]
 
