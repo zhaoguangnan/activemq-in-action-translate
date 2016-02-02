@@ -437,3 +437,20 @@ Message persistence是独立的message domain。Message persistence是服务质�
 producter的setDeliveryMode(JMSDeliveryMode class的PERSISTENT和NON-PERSISTENT properties作为参数)指定的。
 
 ##### 在JMS应用中Request/reply消息传递
+
+虽然JMS规范没有定义request/reply messaging当做明确的messaging domain，但是它提供了message header和一组便利的class处理基于request/reply消息传递。Request/reply消息传递
+是往返的异步回话模式(通过JMSReplyTo，JMSCorrelationID message header和临时destinations，利用PTP domain或者pub/sub domain实现)。JMSReplyTo指定reply被发送到哪个destination，
+JMSCorrelationID回复指定JMSMessageID request message。这些headers连接repaly messages和request messages。临时destinations有长链接创建，并且只能被这个链接消费。由于这些限制
+使得临时destinations对request/reply模式非常有用。
+
+QueueRequestor和TopicRequestor这两个类方便处理基于request/reply模式的消息传递。这些classess提供了request()方法发送request message并且通过创建的temporary destination(只回应一个request)
+等待一个replay message。如图2.8只有一个replay回应一个request。这些类对于最基本的request/reply形式的消息传递是非常有用的。
+
+![](https://github.com/zhaoguangnan/activemq-in-action-translate/blob/master/images/2-F2.8.png)
+
+基本的request/reply消息传递模式(图2.8)
+
+图2.8描述了两点之间基本的request/reply消息传递模式。通常使用JMSReplyTo message header和temporary queue(临时queue就是由receiver发送响应消息，由requestor消费)就可以实现。前面讲述过QueueRequestor
+和TopicRequestor可以处理基本的request/reply，但是不支持更复杂的request/reply cases。比如：一个请求从多个recirves返回多个响应。复杂的应用场景需要自定义开发JMS应用。
+
+####2.4.8 Administered objects
