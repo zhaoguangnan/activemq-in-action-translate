@@ -469,3 +469,54 @@ Destination对象封装具体JMS provider的地址(消息被发送到的和从�
 Temporary destinations由独立的链接创建。它们的生命周期和创建他们的链接一样长，只有创建他们的链接才能创建消费者消费他们。正如上面提到的，temporary destinations通常用在request/reply请求响应模式的message传递中。
 
 ###2.5 使用JMS APIs创建JMS应用
+
+JMS应用可以非常简单，也可以适合于商业应用的复杂需求。类似于JDBC,JNDI,EJBs等APIs，JMS APIs抽象了通用的使用，所以商业代码中不会混杂JMS的代码。这个模式就不在这演示了，因为演示会篇幅很大。
+下面有一些简单的例子演示最基础的JMS APIs最简单的使用。
+
+####2.5.1 一个简单的JMS应用
+
+这个JMS应用使用JAVA语言编写，包含了使用JMS的多个方面。下面的部分我们将复习一下在2.3小节中讲解的JMS构件。一个简单的JMS应用将利用以下步骤构建：
+
+    * 获取JMS connection factory。
+    * 使用connection factory创建一个链接。
+    * 开启JMS链接。
+    * 从链接中创建一个JMS session。
+    * 获取一个JMS destination。
+    * 创建一个JMS producer并且创建一个JMS mesasge发送到destination。
+    * 创建一个JMS consumer并且注册一个JMS message listener。
+    * 发送和接收JMS message。
+    * 关闭所有JMS resources(connection, session, producer, consumer等)。
+
+这些抽象出来的步骤展示了JMS简单的使用步骤。下面的列表展示了创建一个JMS producer并且发送messsage。
+
+列表2.8 发送JMS message
+
+    * public class MyMessageProducer {
+          ...
+          ConnectionFactory connectionFactory;
+          Connection connection;
+          Session session;
+          Destination destination;
+          MessageProducer producer;
+          Message message;
+          boolean useTransaction = false;
+          try {
+              Context ctx = new InitialContext();
+              connectionFactory =
+              (ConnectionFactory) ctx.lookup("ConnectionFactoryName");
+              connection = connectionFactory.createConnection();
+              connection.start();
+              session = connection.createSession(useTransaction,
+              Session.AUTO_ACKNOWLEDGE);
+              destination = session.createQueue("TEST.QUEUE");
+              producer = session.createProducer(destination);
+              message = session.createTextMessage("this is a test");
+              producer.send(message);
+          } catch (JMSException jmsEx) {
+          ...
+          } finally {
+              producer.close();
+              session.close();
+              connection.close();
+          }
+      }
